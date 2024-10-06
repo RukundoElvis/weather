@@ -15,7 +15,13 @@
       align-items: center;
       height: 100vh;
       margin: 0;
+      flex-direction: column;
     }
+    
+    a, i{
+        text-decoration: none;
+    }
+    
     #weather-container {
       background-color: white;
       padding: 30px;
@@ -23,6 +29,7 @@
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
       text-align: center;
       width: 300px;
+      margin-bottom: 20px;
     }
     h2 {
       margin-bottom: 15px;
@@ -63,6 +70,20 @@
       color: #3498db;
       margin-top: 15px;
     }
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .social-links a {
+      color: white;
+      font-size: 24px;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #ddd;
+    }
   </style>
 </head>
 <body>
@@ -73,6 +94,15 @@
     <button onclick="getWeather()">Get Weather</button>
 
     <div id="weather-result"></div>
+  </div>
+
+  <div class="social-links">
+    Talk to Me: 
+    <a href="https://www.twitter.com/RukundoElviss" target="_blank" class="fab fa-twitter"></a>
+    <a href="https://www.github.com/RukundoElvis" target="_blank" class="fab fa-github"></a>
+    <a href="https://www.linkedin.com/RukundoElvis" target="_blank" class="fab fa-linkedin"></a>
+    <a href="https://upwork.com/RukundoElvis" target="_blank" class="fab fa-upwork"></a>
+    <a href="https://instagram.com/RukundoElvis_" target="_blank" class="fab fa-instagram"></a>
   </div>
 
   <script>
